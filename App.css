@@ -1,0 +1,199 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffb6c1' fill-opacity='1' d='M0,128L80,144C160,160,320,192,480,197.3C640,203,800,181,960,176C1120,171,1280,181,1360,186.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.note {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 100%;
+  min-height: 120px;
+  font-family: "Segoe UI", sans-serif;
+  transition: transform 0.2s ease-in-out;
+}
+
+.note:hover {
+  transform: scale(1.05);
+}
+
+.note h1 {
+  font-size: 1.2em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  float: right;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+/* Notes Grid */
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+/* Sticky Note Style */
+.note {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  min-height: 120px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 1em;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.note:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.note h1 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.note p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.note button {
+  float: right;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.note button:hover {
+  transform: scale(1.2);
+  color: red;
+}
+
+/* Header */
+header {
+  background-color: #f5ba13;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Form (Create Area) */
+.create-note {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.create-note input,
+.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  resize: none;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+
+.create-note .MuiFab-root {
+  position: absolute;
+  right: 15px;
+  bottom: -20px;
+  background-color: #f5ba13 !important;
+  color: #fff !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Notes Container */
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+/* Note Card */
+.note {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.note:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.note h1 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.note p {
+  font-size: 1rem;
+  m
+}
